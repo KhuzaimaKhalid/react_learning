@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
 
 
@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div className="container">
-            <a className="navbar-brand" href="#">StudentPortal</a>
+            <Link className="navbar-brand" to="/">StudentPortal</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -32,10 +32,10 @@ const Navbar = () => {
                         </ul>
                     </li> */}
                     <li className="nav-item">
-                        <a className="nav-link disabled" aria-disabled="true">Courses</a>
+                    <Link className="nav-link" to="/courses">Courses</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link disabled" aria-disabled="true">Reports</a>
+                    <Link className="nav-link" to="/reports">Reports</Link>
                     </li>
                     
                 </ul>
